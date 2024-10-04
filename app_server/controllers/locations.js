@@ -27,11 +27,23 @@ const homelist = (req, res) => {
     const locationInfo = (req, res) => {
        res.render('location-info', { title: 'Location info' });
       };
-      /* GET 'Add review' page */
+      const Travel = (req, res) => {
+        res.render('location-info1', { title: 'Location info' });
+       };
+       const Food = (req, res) => {
+        res.render('locationinfo2', { title: 'Location info' });
+       };
+       const Fashion = (req, res) => {
+        res.render('locationinfo3', { title: 'Location info' });
+       };
+       /* GET 'Add review' page */
       const addReview = (req, res) => {
        res.render('location-review-form', { title: 'Add review' });
       };
       module.exports = {
+        Food,
+        Travel,
+        Fashion,
        homelist,
        locationInfo,
        addReview
